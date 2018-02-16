@@ -1,0 +1,20 @@
+<link rel="import" href="../../../../../w-spring/src/main/webapp/frontend/bower_components/polymer/polymer.html">
+<link rel="import" href="../../../../../w-spring/src/main/webapp/frontend/bower_components/vaadin-button/src/vaadin-button.html">
+
+<dom-module id="hello-world">
+    <template>
+<h1>Hello World</h1>
+<vaadin-button id="vaadinButton">
+  Button 
+</vaadin-button>
+</template>
+
+    <script>
+        class HelloWorld extends Polymer.Element {
+            static get is() {
+                return 'hello-world';
+            }
+        }
+        customElements.define(HelloWorld.is, HelloWorld);
+    </script>
+</dom-module>
