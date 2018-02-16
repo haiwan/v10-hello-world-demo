@@ -22,6 +22,10 @@ public class HelloWorld extends PolymerTemplate<HelloWorld.HelloWorldModel> {
     }
 
     public interface HelloWorldModel extends TemplateModel {
+        void setValue(String value);
+    }
 
+    public void setValue(String value){
+        getModel().setValue(value);
     }
 }

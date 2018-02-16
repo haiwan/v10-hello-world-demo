@@ -18,6 +18,8 @@ import com.vaadin.flow.theme.lumo.Lumo;
 public class MainView extends VerticalLayout {
 
     public MainView() {
-        add(new HelloWorld());
+        HelloWorld helloWorld = new HelloWorld();
+        helloWorld.setValue("Java Tura");
+        add(helloWorld);
     }
 }
